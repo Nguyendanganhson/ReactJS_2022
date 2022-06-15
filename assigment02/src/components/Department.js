@@ -1,8 +1,9 @@
 import React from "react";
 import { Card, CardTitle, CardBody, CardText } from "reactstrap";
 
-function renderDepartment(props) {
-  const departments = props.renderDepartmentProps.map((item) => {
+function RenderDepartment(props) {
+  console.log(props.renderDepartmentProps);
+  const Departments = props.renderDepartmentProps.map((item) => {
     return (
       <div className="col-12 col-md-6 col-lg-4 mt-2 mb-2">
         <Card>
@@ -14,6 +15,7 @@ function renderDepartment(props) {
       </div>
     );
   });
+  return Departments;
 }
 
 export default function Department(props) {
@@ -22,7 +24,7 @@ export default function Department(props) {
   return (
     <div className="container">
       <div className="row  m-3">
-        <renderDepartment renderDepartmentProps={props.departmentProps} />
+        <RenderDepartment renderDepartmentProps={props.departmentProps} />
       </div>
     </div>
   );
