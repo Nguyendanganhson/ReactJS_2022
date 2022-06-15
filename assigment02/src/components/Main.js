@@ -6,7 +6,6 @@ import StaffList from "./StaffList";
 import { DEPARTMENTS, STAFFS } from "../shared/staffs";
 import StaffDetail from "./StaffDetail";
 
-import logger from "redux-logger";
 import Department from "./Department";
 import Salary from "./Salary";
 export default function Main() {
