@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, CardTitle, CardBody, CardText } from "reactstrap";
-
+//Presentational Component,
 function RenderDepartment(props) {
   console.log(props.renderDepartmentProps);
   const Departments = props.renderDepartmentProps.map((item) => {
@@ -17,7 +17,7 @@ function RenderDepartment(props) {
   });
   return Departments;
 }
-
+//Container Component
 export default function Department(props) {
   console.log(props.departmentProps);
 
